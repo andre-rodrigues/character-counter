@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha - Character Counter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../support/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <input type="text" class="counter-input count-characters" maxlength=50/>
+    <script src="../support/expect.js"></script>
+    <script src="../support/mocha.js"></script>
+    <!-- <script src="helpers.js"></script> -->
+    <script>mocha.setup('bdd')</script>
+    <script src="../support/jquery.js"></script>
+    <script src="../../character-counter.js"></script>
+    <script src="character-counter.test.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
